@@ -55,9 +55,9 @@ FOREIGN KEY (Enf_ID) REFERENCES Enfermidade(Enf_ID)
 
 3- INSERT INTO cliente
 values
-('11111111111','Gabriel Diniz','Benedito Valadares','Centro','Pará de Minas','1000'),
-('22222222222','Bruno Diniz','Manuel Batista','Santos Dumont','Pará de Minas','200'),
-('33333333333','Miguel Diniz','Avenida Presidente Vargas','São Francisco','Belo Horizonte','1567');
+('11111111111','Ellie','Benedito Valadares','Centro','Pará de Minas','789'),
+('22222222222','Joel Miller','Manuel Batista','Santos Dumont','Pará de Minas','140'),
+('33333333333','Arthur Morgan','Avenida Presidente Vargas','São Francisco','Belo Horizonte','322');
 
 INSERT INTO cli_telefone
 values
