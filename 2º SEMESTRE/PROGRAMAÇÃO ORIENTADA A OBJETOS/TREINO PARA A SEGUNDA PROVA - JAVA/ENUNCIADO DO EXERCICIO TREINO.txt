@@ -1,0 +1,52 @@
+Enunciado:
+Implemente um sistema simples de gerenciamento de uma biblioteca com classes que utilizam composição, métodos sobrecarregados, atributos finais, arrays e listas dinâmicas (ArrayList). Seu sistema deve conter:
+
+1- Classe Livro:
+
+  Atributos:
+• titulo (String)
+• autor (String)
+• anoPublicacao (int)
+• final int codigoLivro (código único do livro, gerado no momento da criação)
+
+
+  Construtores:
+
+• Um construtor que recebe todos os atributos como parâmetros.
+• Um construtor sobrecarregado que recebe apenas o título e o autor e define anoPublicacao como 2024.
+
+
+  Métodos:
+
+• exibirDetalhes: deve ser sobrecarregado para exibir diferentes níveis de detalhe do livro:
+  • Um método, sem parâmetros, retorna apenas o título e o autor.
+  • Outro, com um boolean, retorna o título, autor e ano de publicação.
+
+2- Classe Biblioteca:
+
+  Atributos:
+
+• String nome
+• ArrayList<Livro> livros (uma lista de livros que a biblioteca possui)
+
+
+  Construtores:
+
+• Um construtor que recebe o nome da biblioteca como parâmetro.
+
+  Métodos:
+• adicionarLivro(Livro livro): adiciona um livro à lista de livros.
+• exibirLivros: exibe os detalhes de todos os livros da biblioteca.
+• exibirLivros(int ano): sobrecarregado para exibir apenas os livros publicados em um determinado ano.
+• removerLivro(String título): remove o livro com o título passado no parâmetro.
+
+
+3- Classe Main:
+
+  Crie um método main que permita ao usuário:
+
+• Criar novos objetos Livro usando entradas do usuário com a classe Scanner.
+• Adicionar os livros a um objeto Biblioteca.
+• Exibir os livros cadastrados na biblioteca.
+• Exibir os livros publicados em um ano específico, se o usuário desejar
+• Remover um livro qualquer.

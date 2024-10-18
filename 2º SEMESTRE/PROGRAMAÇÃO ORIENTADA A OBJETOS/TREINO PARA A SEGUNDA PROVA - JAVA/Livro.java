@@ -3,15 +3,17 @@ public class Livro {
     private String autor;
     private int anoPublicacao;
     private final int codigoLivro;
-    
-    public Livro(String titulo, String autor,int anoPublicacao, final int codigoLivro){
+    private static int contadorCodigo = 1;
+   
+    public Livro(String titulo, String autor, int anoPublicacao){
         this.titulo=titulo;
         this.autor=autor;
         this.anoPublicacao=anoPublicacao;
-        this.codigoLivro=codigoLivro;
+        this.codigoLivro= contadorCodigo++;
     }
 
     public Livro(String titulo, int anoPublicacao){
+        this.codigoLivro = contadorCodigo++;
         this.titulo=titulo;
         this.anoPublicacao=2024;
     }
@@ -47,17 +49,17 @@ public class Livro {
     public void exibirDetalhes(){
         System.out.println("Titulo: "+this.getTitulo());
         System.out.println("Autor: "+this.getAutor());
-    } 
+    }
 
 
     public void exibirDetalhes(boolean exibirAno){
         if (exibirAno){
-            return "Titulo: "+titulo+ ", Autor: "+autor+", Ano de publicacao: "+anoPublicacao; 
+            System.out.println("Titulo: "+titulo+ ", Autor: "+autor+", Ano de publicacao: "+anoPublicacao);
         } else {
-            return exibirDetalhes();
+            exibirDetalhes();
         }
 
     }
 
-    
+   
 }
