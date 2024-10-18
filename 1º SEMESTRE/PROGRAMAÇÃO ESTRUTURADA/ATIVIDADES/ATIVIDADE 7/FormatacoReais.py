@@ -1,0 +1,5 @@
+valor = float(input("Digite um valor:\n"))
+ValorFor = str ("%.2f"%valor)
+ValorReal = ValorFor.replace(".",",")
+print ("Valor digitado: %d"%valor)
+print ("Valor em reais: %s"%ValorReal)

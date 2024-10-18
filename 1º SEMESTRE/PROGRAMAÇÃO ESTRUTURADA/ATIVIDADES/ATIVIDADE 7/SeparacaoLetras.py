@@ -1,0 +1,5 @@
+nome = input ("Digite seu nome:\n")
+qtd = int (input ("Quantas letras do seu nome voce quer que sejam separadas? \n"))
+print ("Nome digitado: %s" %nome)
+print ("%d primeiros caracteres: %s"%(qtd, nome[:qtd]))
+print ("Outros caracteres: %s"%nome [qtd:])
