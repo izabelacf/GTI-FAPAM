@@ -28,9 +28,11 @@ public class Biblioteca {
     }
 
     public void exibirLivros(int ano){
+        boolean encontrado = false;
         for (Livro livro : livros){
             if(ano == livro.getAnoPublicacao()){
-                System.out.println(getNome());
+                livro.exibirDetalhes(true);
+                encontrado= true;
             }
         }
 
