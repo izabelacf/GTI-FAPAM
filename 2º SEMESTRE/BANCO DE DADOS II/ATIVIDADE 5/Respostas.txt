@@ -1,0 +1,48 @@
+EXERCICIO TRIGGER
+
+1- A)
+CREATE OR REPLACE FUNCTION removeReservaFunc()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+DELETE FROM reserva
+WHERE codCliente = NEW.codCliente;
+RETURN NEW;
+END;
+$$
+CREATE TRIGGER removeReserva
+AFTER INSERT ON Aluguel
+FOR EACH ROW
+EXECUTE FUNCTION removeReservaFunc();
+
+B) CREATE OR REPLACE FUNCTION mudaAtributoFunc ()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+UPDATE Copia
+SET estaAlugada = 'sim'
+WHERE codCopia = NEW.codCopia;
+RETURN NEW;
+END;
+$$
+CREATE TRIGGER mudaAtributo
+AFTER INSERT ON Aluguel
+FOR EACH ROW
+EXECUTE FUNCTION mudaAtributoFunc ();
+
+C) CREATE OR REPLACE FUNCTION adicionaLinhaFunc ()
+RETURNS TRIGGER
+LANGUAGE plpgsql
+AS $$
+BEGIN
+INSERT INTO Pontos (codCliente, pontos)
+VALUES (NEW.codCliente, 0);
+RETURN NEW;
+END;
+$$
+CREATE TRIGGER adicionaLinha
+AFTER INSERT ON Cliente
+FOR EACH ROW
+EXECUTE FUNCTION adicionaLinhaFunc();
