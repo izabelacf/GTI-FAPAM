@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Iza&Isys</title>
+        <style>
+            .pagina{
+                text-align: center;
+                padding-top: 100px;
+            }
+            .carro{
+                padding-left: 400px;
+            }
+        </style>
+    </head>
+    <header>
+        <div class="linha">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="menu">
+                <p>Menu</p>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="linha">
+            <div class="sobre">
+                <div class="texto">
+                    <h2>Sobre nossa empresa:</h2>
+                    <p>Criada por duas pessoas opostas, mas com o mesmo objeitivo: realizar o seu sonho da casa nova!</p>
+                </div>
+                <div class="saibamais">                   
+                    <script>
+                        function limpar(){
+                            document.body.innerHTML="<h1 class='pagina'>Página em Construção</h1><img class='carro' src='img/pedreiro.jpg'>";
+                        }
+                    </script>
+                    <input type="button" value="Saiba Mais" onclick="limpar()">
+                </div>
+            </div>
+            <div class="imgsobre">
+                <img src="img/up.jpg" alt="casa-up">
+            </div>
+        </div>
+        <div class="linha">
+            <script>
+                function preco(titulo,valor){
+                    alert("Nome: "+titulo + "  Preço: R$" +valor +",00");
+                }
+            </script>
+            <div class="parte">
+                <div class="imgparte">
+                    <img src="img/barbie.jpg" alt="barbie">
+                </div>
+                <div class="descricao">
+                    <input type="button" value="Casas" onclick="preco('Dreamhouse',20)">
+                </div>
+            </div>
+            <div class="parte">
+                <div class="imgparte">
+                    <img src="img/titans.jpg" alt="titans">
+                </div>
+                <div class="descricao">
+                    <input type="button" value="Apartamentos" onclick="preco('Torre Titans',590)">
+                </div>
+            </div>
+            <div class="parte">
+                <div class="imgparte">
+                    <img src="img/cera.jpg" alt="cera">
+                </div>
+                <div class="descricao">
+                    <input type="button" value="Lojas" onclick="preco('Casa de Cera', 1000000000000000)">
+                </div>
+            </div>
+            <div class="parte">
+                <div class="imgparte">
+                    <img src="img/milho.jpg" alt="milho">
+                </div>
+                <div class="descricao">
+                    <input type="button" value="Lotes" onclick="preco('Plantação de Milho', 6666666666666666666)">
+                </div>
+            </div>
+        </div>
+        <div class="linha">
+            <div class="retangulo">
+                <div class="imgret">
+                    <img src="img/cera.jpg" width="500px" height="300" alt="cera">
+                </div>
+                <hr>
+                <div class="titulo">
+                    <h3>A Casa de Cera</h3>
+                </div>
+                <div class="valor">
+                    <p>R$1000000000000000,00</p>
+                </div>
+            </div>
+            <div class="retangulo">
+                <div class="imgret">
+                    <img src="img/up.jpg" width="500px" height="300">
+                </div>
+                <hr>
+                <div class="titulo">
+                    <h3>Casa do Senhor Frederiksen</h3>
+                </div>
+                <div class="valor">
+                    <p>R$28900645,00</p>
+                </div>
+            </div>
+        </div>
+    
+    </body>
+
+    <footer>
+        Todos os direitos reservados &copy
+    </footer>
+</html>
