@@ -11,12 +11,12 @@ public class Programador extends Funcionario {
 
     public Programador(String nome, double salario, String linguagem){
         super(nome, salario);
-        this.linguagem=linguagem;
+        setLinguagem(linguagem);
     }
 
     @Override
     public String exibirDados(){
-        return super.exibirDados() + ", Linguagem: "+linguagem;
+        return super.exibirDados() + ", Linguagem: "+getLinguagem();
     }
     
 }

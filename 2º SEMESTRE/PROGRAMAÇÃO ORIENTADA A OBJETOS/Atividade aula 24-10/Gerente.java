@@ -11,11 +11,11 @@ public class Gerente extends Funcionario {
 
     public Gerente (String nome, double salario, double bonus){
         super(nome, salario);
-        this.bonus=bonus;
+        setBonus(bonus);
     }
 
     @Override
     public String exibirDados(){
-        return super.exibirDados() + ", Bonus: "+bonus;
+        return super.exibirDados() + ", Bonus: "+getBonus();
     }
 }

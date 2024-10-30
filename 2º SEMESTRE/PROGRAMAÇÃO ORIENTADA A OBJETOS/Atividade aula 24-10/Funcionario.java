@@ -3,8 +3,8 @@ public class Funcionario{
     private double salario;
 
     public Funcionario (String nome, double salario){
-        this.nome=nome;
-        this.salario=salario;
+        setNome(nome);
+        setSalario(salario);
 
     }
 
@@ -24,6 +24,6 @@ public class Funcionario{
     }
 
     public String exibirDados(){
-        return "Nome: "+ nome +", Salario: "+ salario;
+        return "Nome: "+ getNome() +", Salario: R$ "+ getSalario();
     }
 }
