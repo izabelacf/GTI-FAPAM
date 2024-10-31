@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livraria Books</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titulo">
+        <h2>LIVRARIA BOOKS</h2>
+    </div>
+    <header id="menu">
+        <nav class="menu">
+            <a href="index.html" class="active">Home</a>
+            <a href="lancamentos.html">Lançamentos</a>
+            <a href="ofertas.html">Ofertas</a>
+            <a href="maisvendidos.html">Mais Vendidos</a>
+            <a href="contato.html">Contato</a>
+            <a href="endereco.html">Endereço</a>
+        </nav>
+    </header>
+    <div class="subtitulo">
+        <p>Preencha esse formulário para receber novidades e ofertas exclusivas!</p>
+    </div>
+    <div class="contato">
+            <form   name="contato"
+            method="post"
+            action="agradecimento.html"
+            autocomplete="on"
+            target="_self"
+            enctype="application/x-www-form-urlencoded">
+        Nome:<input type="text" name="Nome" size="20">
+        Número:<input type="tel" pattern="\d{2} \d{9}$" name="Número" size="20">
+        E-mail:<input type="email" name="E-mail" size="20">
+        Sexo:
+        Masculino<input type="radio" name="Sexo" value="M">
+        Feminino<input type="radio" name="Sexo" value="F">
+        <input type="submit" name="Enviar" value="Enviar">
+        <input type="reset" name="Limpar" value="Limpar">
+
+        </form>
+    </div>
+</body>
+<footer>
+    Livraria Books, FAPAM 2024.
+  </footer>
+</html>
