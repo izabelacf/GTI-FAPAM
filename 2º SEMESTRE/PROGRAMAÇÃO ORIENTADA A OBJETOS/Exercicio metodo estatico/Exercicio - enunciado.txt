@@ -1,0 +1,74 @@
+Estrutura do Exercício:
+
+Classe Produto:
+
+Esta classe representará os itens do inventário.
+Atributos principais: nome, preço, quantidade.
+
+Métodos:
+
+Métodos get e set para cada atributo.
+Construtor para inicializar os atributos.
+Método para ajustar a quantidade (adicionar ou remover itens), garantindo que a quantidade nunca seja negativa.
+Método para calcular o valor total do produto no estoque (quantidade * preço).
+
+
+Classe Fornecedor (Composição):
+
+Cada produto será associado a um fornecedor.
+
+Atributos principais: nome, CNPJ, contato (e-mail ou telefone).
+
+Métodos:
+
+Métodos get e set para acessar e modificar os atributos.
+Construtor para inicializar o fornecedor.
+A classe Produto terá um atributo do tipo Fornecedor, estabelecendo a relação de composição.
+
+
+Classe Conversor (Métodos Estáticos):
+
+Esta classe conterá métodos estáticos que ajudam a realizar operações com os produtos.
+
+Métodos:
+
+Converter para dólar: Recebe um objeto Produto e a taxa de câmbio atual para converter o valor total (quantidade * preço) do produto em dólares.
+Exibir com desconto: Recebe um objeto Produto e uma porcentagem de desconto. Calcula e exibe o preço do produto com o desconto aplicado.
+
+
+Classe Aplicativo (Com método main):
+
+Esta classe será responsável por rodar o sistema e testar todas as funcionalidades.
+
+Dentro do método main:
+
+Criar vários produtos e fornecedores.
+Testar a função de ajuste de quantidades (tanto para aumentar quanto para diminuir).
+Usar os métodos da classe Conversor para:
+Exibir o valor do produto em dólares.
+Exibir o valor com desconto.
+Exibir relatórios no console (por exemplo, "O valor total do produto X em dólares é..." ou "O preço do produto Y com desconto de Z% é...").
+
+
+Pontos que o aluno deve desenvolver:
+
+Implementação da composição: Ao criar a classe Produto, o aluno deve associar um objeto Fornecedor a cada produto. O fornecedor deve ser passado ao construtor e armazenado como atributo.
+Métodos de ajuste: O aluno deve escrever a lógica que ajusta a quantidade de produtos, garantindo que o valor nunca seja negativo.
+Métodos estáticos na classe Conversor:
+O aluno deve implementar o método converterParaDolar, que usa a taxa de câmbio para calcular o valor total do produto em dólares.
+O método exibirComDesconto deve calcular e exibir o preço do produto com uma porcentagem de desconto aplicada.
+Testes no main: A classe Aplicativo deve testar todas as funcionalidades, como criação de produtos, ajuste de quantidade, conversão para dólar e exibição do preço com desconto.
+
+
+Dicas para o Aluno:
+
+Encapsulamento: Utilize métodos get e set para proteger o acesso aos atributos das classes.
+Composição: A classe Produto deve conter um atributo do tipo Fornecedor, para representar a relação de que "um produto tem um fornecedor".
+Métodos estáticos: Esses métodos na classe Conversor permitem realizar operações diretamente, sem instanciar a classe. Isso é útil para tarefas como conversão de valores ou cálculos que não precisam ser específicos de uma instância.
+
+Exemplo de Fluxo:
+
+O aluno cria um produto "Celular" com quantidade 10 e preço 1200.
+Através da classe Conversor, ele pode calcular o valor desse produto em dólares.
+Em seguida, ele pode aplicar um desconto de 15% e exibir o novo preço.
+O aluno também ajusta a quantidade do produto e verifica se a lógica de quantidade negativa está funcionando corretamente.
