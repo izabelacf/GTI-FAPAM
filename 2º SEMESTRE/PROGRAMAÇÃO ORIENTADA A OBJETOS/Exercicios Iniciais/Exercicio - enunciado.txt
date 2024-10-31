@@ -1,0 +1,95 @@
+###Exercício 1 : **Classe `Carro`**
+
+Crie uma classe chamada `Carro` com os seguintes atributos privados:
+
+- `marca` (String)
+
+- `modelo` (String)
+
+- `ano` (int)
+
+
+
+Implemente os métodos **getter** e **setter** para cada atributo, e um construtor que inicialize todos os atributos.
+
+
+
+**Tarefas:**
+
+- Crie um objeto da classe `Carro` no método `main` e inicialize-o com valores de sua escolha.
+
+- Utilize os métodos getters para exibir os valores no console.
+
+- Altere o valor do `ano` utilizando o método setter e exiba o valor atualizado no console.
+
+
+
+### Exercício 2 : **Classe `Pessoa`**
+
+Crie uma classe chamada `Pessoa` com os seguintes atributos privados:
+
+- `nome` (String)
+
+- `idade` (int)
+
+- `altura` (double)
+
+
+
+Implemente os métodos **getter** e **setter** para cada atributo. Crie também um método chamado `exibirDados()` que exibe todas as informações da pessoa no formato:
+
+```
+
+Nome: [nome]
+
+Idade: [idade]
+
+Altura: [altura]
+
+```
+
+
+
+**Tarefas:**
+
+- Crie dois objetos da classe `Pessoa` no método `main` e inicialize-os com valores diferentes.
+
+- Chame o método `exibirDados()` para ambos os objetos e exiba as informações no console.
+
+
+
+### Exercício 3 : **Classe `Produto`**
+
+Crie uma classe chamada `Produto` com os seguintes atributos privados:
+
+- `nome` (String)
+
+- `preco` (double)
+
+- `quantidade` (int)
+
+
+
+Implemente os métodos **getter** e **setter** para cada atributo. Crie também um construtor que inicializa apenas o `nome` e o `preco`, e defina o valor padrão de `quantidade` como 0.
+
+
+
+Adicionalmente, implemente os seguintes métodos:
+
+- `adicionarEstoque(int quantidade)` - que aumenta o valor do estoque.
+
+- `venderProduto(int quantidade)` - que reduz o valor do estoque, se a quantidade em estoque for suficiente.
+
+- `exibirProduto()` - que exibe o nome do produto, o preço e a quantidade em estoque.
+
+
+
+**Tarefas:**
+
+- Crie dois objetos da classe `Produto` no método `main` com valores diferentes.
+
+- Aumente o estoque de ambos os produtos.
+
+- Venda uma quantidade de um dos produtos.
+
+- Exiba os dados dos produtos utilizando o método `exibirProduto()`.
