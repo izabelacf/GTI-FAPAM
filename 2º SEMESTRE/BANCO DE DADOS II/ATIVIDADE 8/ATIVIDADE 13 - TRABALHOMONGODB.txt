@@ -1,0 +1,54 @@
+1 – Utilizando um banco de dados não relacional, crie um database chamado 
+clinica. Em seguida crie 3 colletions: Cliente, Medico e Consulta. 
+
+2 – Insira os clientes abaixo na collection de Cliente, ignore as máscaras do 
+CPF e celular, insira somente os dígitos: 
+• Gabriel Diniz, 111.111.111-11, Rua Benedito Valadares, 1000 – Centro, 
+(037) 9 8888-8888.
+• Bruno Diniz, 222.222.222-22, Rua Manuel Batista, 200 – Santos 
+Dumont, (037) 9 7777-7777, (037) 9 6666-6666
+• Miguel Diniz, 333.333.333-33, Avenida Presidente Vargas, 1567 – São 
+Francisco, (037) 9 5555-5555.
+
+3 – Insira os médicos abaixo na collection Medico, faça isso utilizando somente 
+UM comando:
+• Fernando Maciel, Clínico Geral, R$ 15.500,00, CRM 75689
+• Anderson Tres, Oftalmologista, R$ 20.000,00, CRM 65893
+• Isac Cardoso, Neurologista, R$ 22.555,00, CRM 68712
+
+4 – Insira as consultas que foram realizadas:
+• Gabriel se consultou com o Doutor Fernando no dia 01/05/2023 às 14:00
+por R$ 300,00
+• Miguel se consultou com Doutor Isac Cardoso no dia 04/03/2023 às 
+17:00 por R$ 250,00, no 3º andar
+• Bruno se consultou com Doutor Anderson Tres no dia 02/04/2023 às
+08:00 por R$ 350,00, na sala 505
+
+5 – Atualize o horário da consulta do Gabriel para 10:30
+
+6 – O salário de todos Médicos passou a ser o mesmo, R$ 15.000,00 , atualize 
+os dados no banco de dados.
+
+7 – A empresa decidiu fazer um cashback de 10% na consulta feita pelo 
+Gabriel. Atualize o valor da consulta no banco de dados. Pode realizar o cálculo 
+em uma calculadora e atualizar utilizando o resultado. 
+
+8 – Reduza o salário dos médicos com CRM 65893 e 68712 para R$ 
+12.000,00. Utiliza o comando IN
+
+9 – Selecione os dados de todos os clientes.
+
+10 – Selecione o nome de todos os médicos com salário maior que R$ 
+13.000,00.
+
+11 – Selecione as consultas realizadas em uma sala com número maior à 500 
+OU com valor menor que R$ 330,00
+
+12 – Atualize o valor de uma consulta para R$ 400,00 utilizando o ID
+DESAFIOS
+
+13 – Exclua uma consulta utilizando como filtro o _id
+
+14 – Exclua todos os médicos que ganham um salário menor que R$ 13.000,00
+
+15 – Exclua todos os clientes

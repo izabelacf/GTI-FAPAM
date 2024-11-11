@@ -1,0 +1,60 @@
+ATIVIDADE MONGODB
+
+2- db.getCollection("cliente").insertMany([
+{"nome": "Gabriel Diniz", "cpf":11111111111, "endereço": "Rua 
+Benedito Valadares, 1000 - Centro", "telefone": 37988888888 },
+{"nome": "Bruno Diniz", "cpf":22222222222, "endereço": "Rua Manuel 
+Batista, 200 – Santos Dumont", "telefone": 3797777777, 
+"telefone":3796666666 },
+{"nome": "Miguel Diniz", "cpf":33333333333, "endereco": "Avenida 
+Presidente Vargas, 1567 – São Francisco", "telefone": 37955555555}
+])
+
+3- db.getCollection ("medico").insertMany([
+ {"nome": "Fernando Maciel", "especialidade": "clinico geral", 
+"salario": 15500.00, "CRM": 75689},
+ {"nome": "Anderson Tales", "especialidade": "oftalmologista", 
+"salario": 20000.00, "CRM": 65893},
+ {"nome": "Isac Cardoso", "especialidade": "neurologista", 
+"salario": 22555.00, "CRM": 68712}
+])
+
+4- db.getCollection ("consulta").insertMany([
+ {"cliente": "Gabriel Diniz", "medico": "Doutor Fernando", "dia": 
+"01/05/2023", "horario": "14h00", "valor": 300.00},
+ {"cliente": "Miguel Diniz", "medico": "Doutor Isac Cardoso", 
+"dia": "04/03/2023", "horario": "17h00", "valor": 250.00, "local": 
+"3 andar"},
+ {"cliente": "Bruno Diniz", "medico": "Doutor Anderson Tales", 
+"dia": "02/04/2023", "horario": "08h00", "valor": 350.00, "local": 
+"sala 505"}
+])
+
+5- db.getCollection("consulta").updateOne({"cliente": "Gabriel 
+Diniz"}, {$set : {horario: "10h30"}})
+
+6- db.getCollection("medico").updateMany({},{$set: {"salario": 
+15000}})
+
+7- db.getCollection("consulta").updateOne({"cliente": "Gabriel 
+Diniz"}, {$set : {"valor": 270.00}})
+
+8- db.getCollection("medico").updateMany({"CRM": {$in: [65893, 
+68712]}}, {$set: {"salario": 12.000}})
+
+9- db["cliente"].find()
+
+10- db.getCollection("medico").find({"salario": {$gt: 13000.00}})
+
+11- db.getCollection("consulta").find({$or: [{"local": {$gt: 
+500}},{"valor": {$lt: 330.00}}]})
+
+12- db.getCollection("consulta").updateOne({_id: 
+ObjectId("67313e07ccac923bc375925e")}, {$set : {"valor": 400}})
+
+13- db.getCollection("consulta").deleteOne({_id: 
+ObjectId('67313e07ccac923bc375925e'),})
+
+14- db.getCollection("medico").deleteMany({"salario": {$lt: 13000}})
+
+15- db.getCollection("cliente").deleteMany({})
