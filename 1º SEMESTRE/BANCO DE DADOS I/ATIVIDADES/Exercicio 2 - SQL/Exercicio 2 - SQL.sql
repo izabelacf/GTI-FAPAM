@@ -1,10 +1,10 @@
 --1 
-Cliente (CPF PK, Cli_nome, Rua, Bairro, Cidade, Numero)
-Cli_telefone (CPF* PK, Telefone PK)
-Animal (Ani_ID PK, Ani_nome, Especie, CPF*)
-Veterinario (CRV PK, Vet_nome, Salario, Experiencia)
-Enfermidade (Enf_ID PK, Gravidade, Enfi_descricao)
-Consulta (Cod_consulta PK, Data, Valor, Ani_ID*, CRV*, Enf_ID*)
+--Cliente (CPF PK, Cli_nome, Rua, Bairro, Cidade, Numero)
+--Cli_telefone (CPF* PK, Telefone PK)
+--Animal (Ani_ID PK, Ani_nome, Especie, CPF*)
+--Veterinario (CRV PK, Vet_nome, Salario, Experiencia)
+--Enfermidade (Enf_ID PK, Gravidade, Enfi_descricao)
+--Consulta (Cod_consulta PK, Data, Valor, Ani_ID*, CRV*, Enf_ID*)
 
 --2 
 CREATE TABLE CLIENTE(
