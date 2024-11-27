@@ -1,0 +1,23 @@
+Atividades
+
+1 - Vamos praticar nossos conhecimentos aplicando o PHP ao nosso projeto do site de notícias. Primeiro vamos alterar
+nossas páginas para extensão .php e colocá-las na pasta PortalNoticias dentro do diretório htdocs.
+Ex: criamos uma pasta PortalNoticias dentro da pasta Htdocs e movemos nossos arquivos para lá, alterando sua
+extensão de .html para .php.. O arquivo index.html passa a se chamar index.php, e assim por diante.
+
+2 - Vamos criar um novo arquivo chamado Noticias.php. Este arquivo deve conter um array multidimensional chamado
+$Noticias com os dados de todas as nossas notícias. O índice principal deve ser id da notícia. Dentro de cada índice
+principal deve conter outro array com os atributos da notícia (título, imagem, texto…etc).
+
+3 - Inclua esse arquivo em suas páginas .php e utilize os dados do array $Noticias para imprimir as notícias da página
+principal. A notícia deve ser carregada de acordo com os dados do arquivo Noticias.php e não mais estatístico no HTML.
+Se o arquivo Notícias.php for alterado, as páginas no site também serão alteradas dinamicamente.
+
+4 - Altere a página lerNoticia.php de modo que ela carregue dinamicamente a notícia de acordo com a opção
+selecionada. Ex: se a pessoa estiver na página inicial e clicar na primeira notícia, ela deve ser encaminhada para página
+lerNoticia.php com os dados dessa notícia, se clicar na segunda notícia, carregar os dados da segunda notícia e assim por
+diante…
+
+5 - Altere a página enviaMensagem.php de modo ao submeter o formulário seja apresentada uma mensagem
+personalizada com os dados enviados. Ex: Sua mensagem foi enviada com sucesso! Dados da Mensagem: Nome: ,
+Telefone:, E-mail: e Mensagem:.
