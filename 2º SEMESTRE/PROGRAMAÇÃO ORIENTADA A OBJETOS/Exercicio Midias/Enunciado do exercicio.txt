@@ -1,0 +1,92 @@
+Enunciado
+Desenvolva um sistema para gerenciar uma Biblioteca de Mídias Digitais. A biblioteca contém Mídias de diferentes tipos, como Livros, Filmes e Músicas. Cada Livro pode ter um ou mais Autores, e a biblioteca também realiza operações para calcular e validar informações das mídias armazenadas.
+
+Requisitos Detalhados
+
+1.Classe Autor:
+
+Atributos:
+String nome
+int anoNascimento
+Construtores:
+Um construtor que recebe nome e anoNascimento.
+Métodos:
+getNome(), getAnoNascimento().
+exibirAutor(): retorna uma string com o nome e ano de nascimento do autor.
+calcularIdade(int anoAtual): calcula e retorna a idade do autor com base no ano atual.
+
+2.Classe abstrata Midia (classe base abstrata):
+
+Atributos:
+String titulo
+int anoLancamento
+String categoria
+Construtores:
+Um construtor que recebe titulo, anoLancamento, e categoria.
+Métodos:
+getTitulo(), getAnoLancamento(), getCategoria().
+public abstract String exibirInfo(): método abstrato que retorna uma string com informações detalhadas sobre a mídia.
+public abstract String tipoDeMidia(): método abstrato que retorna o tipo da mídia (por exemplo, "Livro", "Filme", "Música").
+
+3.Classe Livro (herda de Midia e utiliza Autor como composição):
+
+Atributos:
+ArrayList<Autor> autores – uma lista de autores do livro.
+int numeroPaginas
+Construtores:
+Um construtor que recebe titulo, anoLancamento, categoria, ArrayList<Autor> autores, e numeroPaginas.
+Métodos:
+exibirInfo(): sobrescreve o método exibirInfo para incluir os autores e o número de páginas.
+tipoDeMidia(): retorna "Livro".
+final String exibirResumo(): método final que retorna uma string com um breve resumo do livro (por exemplo: "Título: XYZ, Páginas: 200").
+boolean validarLivro(int paginasMinimas): método que valida se o livro atende a um número mínimo de páginas.
+listarAutores(): retorna uma string com a lista de todos os autores do livro.
+
+4.Classe Filme (herda de Midia):
+
+Atributos:
+String diretor
+int duracao (duração em minutos)
+Construtores:
+Um construtor que recebe titulo, anoLancamento, categoria, diretor e duracao.
+Métodos:
+exibirInfo(): sobrescreve o método exibirInfo para incluir o diretor e a duração do filme.
+tipoDeMidia(): retorna "Filme".
+
+5.Classe Musica (herda de Midia):
+
+Atributos:
+String artista
+String generoMusical
+Construtores:
+Um construtor que recebe titulo, anoLancamento, categoria, artista e generoMusical.
+Métodos:
+exibirInfo(): sobrescreve o método exibirInfo para incluir o artista e o gênero musical.
+tipoDeMidia(): retorna "Música".
+
+6.Classe Biblioteca:
+
+Atributos:
+String nome (nome da biblioteca).
+Midia[] colecaoMidias – um array de objetos Midia com capacidade para 20 itens.
+Construtores:
+Um construtor que inicializa o nome e o array colecaoMidias.
+Métodos:
+adicionarMidia(Midia midia): adiciona uma mídia ao array, se houver espaço.
+listarMidias(): retorna uma string listando todos os títulos e tipos de mídias.
+exibirDetalhesMidia(String titulo): retorna uma string com os detalhes de uma mídia específica com base no título.
+contarMidiasPorAno(int ano): retorna o número de mídias lançadas em um ano específico (demonstrando desenvolvimento de lógica).
+
+7.Classe Utilidades (classe com métodos static):
+
+Método:
+static String exibirPorCategoria(Midia[] midias, String categoria): retorna uma string listando todas as mídias de uma categoria específica no array.
+
+8.Classe Aplicativo:
+
+No método main, o programa deve:
+Criar uma biblioteca e adicionar alguns objetos Livro, Filme e Musica.
+Exibir a lista completa das mídias.
+Exibir os detalhes de uma mídia específica.
+Exibir a quantidade de mídias de um ano específico.
+Exibir a quantidade de autores de um livro específico usando métodos static.
