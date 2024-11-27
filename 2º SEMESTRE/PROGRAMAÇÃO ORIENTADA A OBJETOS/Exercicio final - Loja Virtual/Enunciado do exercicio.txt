@@ -1,0 +1,55 @@
+Enunciado:
+Desenvolva uma aplicação em Java utilizando o conceito de Orientação a Objetos para resolver um problema ou simular um contexto de sua escolha (por exemplo, gerenciamento de uma escola, loja virtual, zoológico, sistema bancário, etc.).
+
+A aplicação deve atender aos seguintes requisitos:
+
+Requisitos Técnicos:
+
+1.Quantidade de classes:
+O programa deve conter no mínimo 6 classes, além de uma classe principal para testar a aplicação.
+
+2.Recursos obrigatórios de OOP:
+
+Composição: Pelo menos uma classe deve conter um ou mais objetos de outra classe como atributos.
+Sobrescrita: Pelo menos um método que seja sobrescrito em uma classe derivada.
+Sobrecarga: Pelo menos dois métodos com o mesmo nome, mas com assinaturas diferentes.
+Herança: Pelo menos duas classes devem utilizar herança.
+Polimorfismo: Demonstre polimorfismo com chamadas de métodos utilizando uma referência genérica.
+Final:
+Um atributo final que não pode ser alterado após a inicialização.
+Um método final que não pode ser sobrescrito.
+Uma classe final que não pode ser herdada.
+Abstract:
+Pelo menos uma classe abstrata com pelo menos um método abstrato.
+Static:
+Inclua pelo menos dois métodos estáticos que realizem cálculos ou validações.
+Estrutura de dados (Arrays):
+Pelo menos um array deve ser utilizado para armazenar objetos ou dados.
+Downcasting:
+Inclua o uso de instanceof para verificar o tipo de um objeto antes de realizar o downcasting.
+
+3.Justificativas:
+
+Cada recurso deve ser identificado no código com um comentário explicando onde e por que ele está sendo utilizado.
+
+4.Classe de teste:
+
+Crie uma classe principal com o método main para instanciar objetos e testar a aplicação.
+
+
+Diretrizes para o aluno:
+1.Contexto:
+
+Escolha um contexto significativo para a aplicação (exemplo: simulação de uma loja virtual, gerenciamento de funcionários, controle de veículos, etc.).
+
+2.Documentação:
+
+Adicione comentários no código para indicar claramente onde os requisitos estão sendo atendidos e justifique o uso dos recursos.
+
+3.Recursos adicionais:
+
+Você pode incluir outros conceitos aprendidos no curso, como encapsulamento ou o uso de ArrayList.
+
+4.Teste completo:
+
+A classe principal deve demonstrar o funcionamento de todos os recursos implementados na aplicação.
