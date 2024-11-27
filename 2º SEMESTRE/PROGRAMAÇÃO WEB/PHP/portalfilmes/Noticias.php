@@ -143,3 +143,4 @@ $Noticias=[
 		'Imagem'=>"imagens/barbarian.jpg"
 	]
 ];
+?>
