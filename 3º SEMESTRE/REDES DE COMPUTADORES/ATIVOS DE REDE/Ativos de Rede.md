@@ -223,7 +223,7 @@ demais para as suas necessidades
 
 ## Kit conversor de mídia, ONT/ONU
 
-![image.png](imagns/image%204.png)
+![image.png](imagens/image%204.png)
 
 Os aparelhos que recebem o sinal de fibra óptica em casa são chamados de ONT
 (Optical Network Terminal) ou ONU (Optical Network Unit). Esses dispositivos são
