@@ -13,7 +13,7 @@ estudantes de graduação na área de Tecnologia da Informação.
 
 ## 1. Hubs
 
-![image.png](image.png)
+![image.png](imagens/image.png)
 
 Os hubs são dispositivos de rede básicos que operam na camada física (Layer 1)
 do modelo OSI. Eles são utilizados para conectar múltiplos dispositivos em uma rede local (LAN), permitindo a comunicação entre eles. No entanto, os hubs são
@@ -44,7 +44,7 @@ simultânea).
 
 ## 2. Switches
 
-![image.png](f5977dcf-5bc2-4833-a442-57513183f2b3.png)
+![image.png](imagens/f5977dcf-5bc2-4833-a442-57513183f2b3.png)
 
 Os switches são dispositivos mais avançados que operam na camada de enlace
 (Layer 2) do modelo OSI, embora existam switches que também operam na
@@ -85,7 +85,7 @@ locais.
 
 ## 3. Roteadores
 
-![image.png](image%201.png)
+![image.png](imagens/image%201.png)
 
 Os roteadores são dispositivos essenciais para a interconexão de redes
 diferentes, como uma rede local (LAN) e a internet. Eles operam na camada de
@@ -123,7 +123,7 @@ vídeo, garantindo melhor desempenho.
 
 ## 4. Gateways
 
-![image.png](image%202.png)
+![image.png](imagens/image%202.png)
 
 Gateways são dispositivos ou softwares que atuam como intermediários entre
 redes que utilizam protocolos diferentes. Eles são capazes de traduzir e converter
@@ -161,7 +161,7 @@ exemplo, IPv4 e IPv6).
 
 ## 5. Modems
 
-![image.png](image%203.png)
+![image.png](imagens/image%203.png)
 
 Os modems (Modulador/Demodulador) são dispositivos que convertem sinais
 digitais em analógicos e vice-versa, permitindo a transmissão de dados através de
@@ -200,7 +200,7 @@ gerenciamento de rede local.
 
 ## Convergência entre dispositivos
 
-![image.png](92781cfc-06e5-43cf-8334-bc2bcd09df16.png)
+![image.png](imagens/92781cfc-06e5-43cf-8334-bc2bcd09df16.png)
 
 Estes aparelhos contam com as funções de switch, modem e roteador. Nestes
 casos, o principal beneficiado é o consumidor, que pode usar um aparelho sem
@@ -223,7 +223,7 @@ demais para as suas necessidades
 
 ## Kit conversor de mídia, ONT/ONU
 
-![image.png](image%204.png)
+![image.png](imagns/image%204.png)
 
 Os aparelhos que recebem o sinal de fibra óptica em casa são chamados de ONT
 (Optical Network Terminal) ou ONU (Optical Network Unit). Esses dispositivos são
@@ -255,4 +255,4 @@ XGS-PON (para redes mais avançadas).
 - Pode incluir funcionalidades de roteamento Wi-Fi, integrando o modem e o
 roteador em um único dispositivo (conhecido como roteador ONT).
 
-![image.png](image%205.png)
+![image.png](imagens/image%205.png)
