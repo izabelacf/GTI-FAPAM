@@ -15,6 +15,7 @@
 - Faz parte do núcleo central do hardware de qualquer computador
 
 <aside>
+  
 💡 *Tudo que você faz – abrir um app, jogar, acessar um site – passa pela CPU!*
 
 </aside>
@@ -100,7 +101,8 @@ Esse ciclo se repete indefinidamente durante o funcionamento do processador.
 - Suportar múltiplos núcleos e threads
 
 <aside>
-💡  Quanto mais eficiente for o design, maior o desempenho e menor o consumo de energia.
+
+💡  *Quanto mais eficiente for o design, maior o desempenho e menor o consumo de energia.*
 
 </aside>
 
@@ -152,7 +154,8 @@ Tipos de paralelismo:
 - Arquiteturas como **MMX** e **SSE** derivam desses conceitos
 
 <aside>
-💡 O PlayStation 4 usa esse tipo de arquitetura híbrida.
+  
+💡 *O PlayStation 4 usa esse tipo de arquitetura híbrida.*
 
 </aside>
 
@@ -196,6 +199,7 @@ aspecto particular, o ILLIAC IV é um dos ancestrais do Pentium 4.
 - Mais fáceis de construir em larga escala
 
 <aside>
+  
 💡 👨‍🔬 *Sistemas híbridos estão sendo estudados para unir o melhor dos dois mundos.*
 
 </aside>
