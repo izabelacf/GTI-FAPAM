@@ -17,7 +17,6 @@ O curso de **Gestão da TI** forma profissionais capazes de integrar conheciment
 - Análise e Desenvolvimento de Sistemas
 - Gestão de Projetos de TI
 - Segurança da Informação
-- Empreendedorismo e Inovação Tecnológica
 
 ---
 
