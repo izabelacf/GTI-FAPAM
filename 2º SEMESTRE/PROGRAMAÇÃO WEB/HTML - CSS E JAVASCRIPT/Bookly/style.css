@@ -1,0 +1,229 @@
+
+
+.carousel {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent;
+    
+  }
+  
+  .paginas {
+    display: inline-block;
+    animation: anima 10s linear infinite;
+  }
+
+  .paginas img{
+    width: 200px;
+  }
+
+  @keyframes anima{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+  }
+
+
+.menu {
+    background-color: #438587;
+    text-align: center;
+
+}
+.titulo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to right, #cf494b, #f1e0cc, #cf494b, #438587,#438587, #cf494b);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    font-size: 50px;
+    margin: 15px auto;
+    display: flex;
+}
+body{
+  background-color: #f1e0cc;
+}
+
+.logo{
+  margin-right: 10px;
+}
+.menu a {
+    color: #000000;
+    padding: 10px 15px; 
+    display: inline-block;
+    font-size: 25px; 
+    color: rgb(231, 231, 231);
+}
+.subtitulo{
+    text-align: justify;
+    font-size: 30px;
+    color: #cf494b;
+}
+
+
+
+
+.contato{
+	padding:10px;
+	padding-top:5px;
+	border: solid 1px  rgb(33, 15, 112);
+	margin-top:10px;
+
+}
+
+
+#categorias {
+    padding: 20px;
+    text-align: center;
+}
+  
+.categoria-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+  padding: 20px;
+  gap:20px;
+}
+  
+.categoria-item {  
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  align-items: center; 
+}
+  
+.categoria-item img {
+  width: 200px; 
+  height: 200px;
+  margin-right: 20px; 
+}
+  
+.icone {
+  width: 100px;
+  height: 100px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-bottom: 10px;
+}
+
+.categoria-item h3 {
+  margin: 0;
+  font-size: 1em;
+  text-align: center;
+}
+
+.linha{
+  display: flex;
+}
+.imgproduto{
+  text-align: center;
+  width: 30%;
+  margin-top: 100px;
+  
+}
+
+.imgproduto img{
+  width:95%;
+}
+
+.produto{
+  width: 70%;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  background-color: rgba(240, 248, 255, 0.5); 
+  padding-left: 10px;
+  padding-top: 10px;
+  margin-top: 15px;
+}
+
+.descricao{
+  font-size: 30px;
+  font-style: initial;
+  color: #231e1a;
+  column-count: 2; 
+  column-gap: 20px;
+  column-rule: 2px solid #ccc;
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  /*border-radius: 10px;*/ 
+  background-color: #e9ecef;
+}
+
+.preco{
+  font-size: 25px;
+}
+
+.mapa{
+  width: 500px;
+  height: 500px;
+}
+
+@media (min-width:300px) and (max-width: 720px){
+  .linha{
+  display: block;
+  }
+  .imgproduto{
+  width: 100%;
+  text-align: center;	
+  }
+  .produto{
+  width:100%;
+  padding:2px;
+  border: solid 1px #4B0082;
+  }
+  form{
+  text-align: justify;
+  }
+  .mapa{
+    width: 100%;
+  }
+
+}
+@media (min-width:721px) and (max-width: 960px){
+  .linha{
+  display: flex;
+  }
+  .imgproduto{
+    width: 50%;
+    margin-top: 15px;
+    
+  }
+
+  .produto{
+    width: 50%;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.5); 
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 15px;
+  }
+  form{
+  text-align: justify;
+  }
+}
+@media (min-width:961px) and (max-width: 1250px){
+  .linha{
+  display: flex;
+  }
+  .imgproduto{
+    width: 35%;
+    margin-top: 15px;
+    
+  }
+
+  .produto{
+    width: 65%;
+    border: solid 1px black;
+    border-radius: 10px;
+    background-color: rgba(240, 248, 255, 0.5); 
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 15px;
+  }
+  form{
+  text-align: justify;
+  }
+}
